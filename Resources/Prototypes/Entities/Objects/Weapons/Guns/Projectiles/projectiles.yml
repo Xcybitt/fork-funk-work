@@ -924,6 +924,31 @@
     energy: 0.5
 
 - type: entity
+  id: BulletRocketSingulo
+  name: singularity buster rocket
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+      - state: frag
+  - type: ExplodeOnTrigger
+  - type: Explosive #this SHOULDN'T crit anyone #like 15 damage TOPS on direct hit sooo
+    explosionType: Default
+    maxIntensity: 0.5
+    intensitySlope: 0.25
+    totalIntensity: 1
+    maxTileBreak: 1
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: SinguloFood #3 shots to kill a T4 singularity fed with the singulo beacons. above that, uh. it's wraps. go get a particle decelerator and finish the job
+    energy: -400
+    energyFactor: 0.97
+
+- type: entity
   id: BulletGrenadeBaton
   name: baton grenade
   parent: BaseBullet

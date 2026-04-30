@@ -476,3 +476,38 @@
   components:
   - type: BallisticAmmoProvider
     proto: ImmovableRodSlow
+
+#yes this is literally just the RPG but for singularities only. There's just... too many looses that's impossible to fix, even with particle decels. This should help. For teslooses, uh. unless you hit it RIGHT on, you're SOL.
+- type: entity
+  name: singularity buster
+  parent: [ BaseWeaponLauncher, BaseCommandContraband ]
+  id: WeaponLauncherRocketCE
+  suffix: CE
+  description: A specialized rocket launcher that can only shoot singularity-busting rockets filled with negative particles. Try not to miss.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Launchers/rocket.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Launchers/rocket.rsi
+  - type: Gun
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeRocketSingulo
+    proto: CartridgeRocketSingulo
+    capacity: 1
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

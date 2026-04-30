@@ -58,6 +58,26 @@
     - type: StaticPrice
       price: 20
 
+- type: entity
+  parent: [BaseItem, BaseCommandContraband]
+  id: CartridgeRocketSingulo
+  name: singularity buster grenade
+  description: A 1.5 warhead designed for the singularity buster. It's unusually light.
+  components:
+    - type: Tag
+      tags:
+        - CartridgeRocketSingulo
+    - type: Item
+      size: Small
+    - type: CartridgeAmmo
+      proto: BulletRocketSingulo
+      deleteOnSpawn: true
+    - type: Sprite
+      sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+      state: rpg
+    - type: StaticPrice
+      price: 20
+
 # Grenades
 
 - type: entity

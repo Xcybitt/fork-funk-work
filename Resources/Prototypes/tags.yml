@@ -427,6 +427,9 @@
 - type: Tag
   id: CartridgeRocket # Specialty ammo for WeaponLauncherRocket.
 
+- type: Tag
+  id: CartridgeRocketSingulo # Special ammo for the singularity buster
+
 #endregion
 
 - type: Tag

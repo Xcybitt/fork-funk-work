@@ -237,6 +237,10 @@
     - id: MetalFoamGrenade
     - id: PlushieLizardJobChiefengineer
       prob: 0.02
+    - id: WeaponLauncherRocketCE # funky #better not miss!
+    - id: CartridgeRocketSingulo #woops missed
+    - id: CartridgeRocketSingulo
+    - id: CartridgeRocketSingulo
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
