@@ -44,6 +44,11 @@ uplink-bulldog-desc = Lean and mean: Contains the popular Bulldog Shotgun.
 uplink-grenade-launcher-name = China-Lake
 uplink-grenade-launcher-desc = An old China-Lake grenade launcher bundled with 5 rounds of anti-personnel ammo.
 
+uplink-SMGBriefcase-name = Operative Briefcase
+uplink-SMGBriefcase-desc = A briefcase fitted with a trigger and a modified C-20r in it. Because of the briefcase it needs to fit in, the C-20r has been modified to fit, making it have a higher rate of fire, but sacrificing its accuracy and auto-ejecting magazine feature.
+
+uplink-minigun-name = Minigun
+uplink-minigun-desc = A belt-fed machine gun with an internal magazine. Built for suppresion, first and foremost. Has quite the heft to it.
 # Explosives
 uplink-explosive-grenade-name = Explosive Grenade
 uplink-explosive-grenade-desc = A simplistic grenade with a 3.5 second long fuse that is geared towards injuring personnel. Causes minimal hull damage.

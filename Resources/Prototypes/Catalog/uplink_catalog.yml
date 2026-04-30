@@ -342,6 +342,20 @@
       tags:
       - NukeOpsUplink
 
+- type: listing #more of a stealth thing
+  id: UplinkSMGBriefcase
+  name: uplink-SMGBriefcase-name
+  description: uplink-SMGBriefcase-desc
+  icon: { sprite: Objects/Storage/Briefcases/briefcase_brown.rsi, state: icon }
+  productEntity: WeaponSubMachineGunBriefcase
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 16
+  categories:
+  - UplinkWeaponry
+
 - type: listing
   id: UplinkBulldog
   name: uplink-bulldog-name
@@ -440,6 +454,20 @@
   description: uplink-l6-saw-bundle-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/LMGs/l6.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledLMG
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 24
+  cost:
+    Telecrystal: 30
+  categories:
+  - UplinkWeaponry
+
+- type: listing #less DPS than the L6, more weight, but higher ROF and total damage packed in. You can't refill it, though. Sidegrade.
+  id: UplinkMinigunBundle
+  name: uplink-minigun-name
+  description: uplink-minigun-desc
+  icon: { sprite: Objects/Weapons/Guns/HMGs/minigun.rsi, state: icon }
+  productEntity: WeaponMinigunSyndicate
   discountCategory: veryRareDiscounts
   discountDownTo:
     Telecrystal: 24
