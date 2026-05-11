@@ -260,6 +260,29 @@
 
 - type: entity
   parent: ChemicalMedipen
+  id: BasicEmergencyMedipen
+  name: basic emergency medipen
+  description: A basic single-dose, non-refillable medipen containing epinephrine, used to temporarily stabilize patients in critical condition and buy time for them to recieve proper medical treatment. Beware of overdose.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 10
+
+- type: entity
+  parent: ChemicalMedipen
   id: AntiPoisonMedipen
   name: poison auto-injector
   description: A single-dose, non-refillable medipen containing ultravasculine and epinephrine, used to quickly and easily treat toxin poisoning.
@@ -294,6 +317,41 @@
           Quantity: 10
         - ReagentId: Epinephrine
           Quantity: 5
+
+- type: entity
+  parent: ChemicalMedipen
+  id: BasicAntiPoisonMedipen
+  name: basic poison auto-injector
+  description: A basic single-dose, non-refillable medipen containing dylovene, used to easily treat toxin poisoning.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#573d9e"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#573d9e"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: penacid
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: penacid_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 10
 
 - type: entity
   parent: ChemicalMedipen
@@ -334,6 +392,41 @@
 
 - type: entity
   parent: ChemicalMedipen
+  id: BasicBruteAutoInjector
+  name: basic brute auto-injector
+  description: A basic single-dose, non-refillable medipen containing bicaridine, used to easily treat simple physical injuries.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#c73333"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#c73333"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: bicpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: bicpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 10
+
+- type: entity
+  parent: ChemicalMedipen
   id: BurnAutoInjector
   name: burn auto-injector
   description: A single-dose, non-refillable medipen containing dermaline and leporazine, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine.
@@ -367,6 +460,41 @@
         - ReagentId: Dermaline
           Quantity: 10
         - ReagentId: Leporazine
+          Quantity: 10
+
+- type: entity
+  parent: ChemicalMedipen
+  id: BasicBurnAutoInjector
+  name: basic burn auto-injector
+  description: A single-dose, non-refillable medipen containing kelotane, used to easily treat non-chemical burns.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#427485"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#427485"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: dermpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: dermpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Kelotane
           Quantity: 10
 
 - type: entity
@@ -405,6 +533,41 @@
           Quantity: 15
         - ReagentId: Bicaridine
           Quantity: 5
+
+- type: entity
+  parent: ChemicalMedipen
+  id: BasicRadAutoInjector
+  name: basic rad auto-injector
+  description: A basic single-dose, non-refillable medipen containing hyronalin, used to easily treat radiation poisoning.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#e3832f"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#e3832f"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: arithpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: arithpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Hyronalin
+          Quantity: 10
 
 - type: entity
   parent: ChemicalMedipen
@@ -516,6 +679,41 @@
           Quantity: 20
         - ReagentId: DexalinPlus
           Quantity: 20
+
+- type: entity
+  parent: ChemicalMedipen
+  id: BasicAirlossAutoInjector
+  name: basic airloss auto-injector
+  description: A basic single-dose, non-refillable medipen containing dexalin, used to easily treat blood loss and asphyxiation.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#5d81c7"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#5d81c7"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: dexpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: dexpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Dexalin
+          Quantity: 10
 
 - type: entity
   parent: ChemicalMedipen

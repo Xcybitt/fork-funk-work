@@ -40,6 +40,12 @@
     ClothingBeltMedicalEMTFilled: 1
     EmergencyRollerBedSpawnFolded: 1
     BoxBodyBag: 1
+    BasicEmergencyMedipen: 2
+    BasicAntiPoisonMedipen: 2
+    BasicBruteAutoInjector: 2
+    BasicBurnAutoInjector: 2
+    BasicRadAutoInjector: 2
+    BasicAirlossAutoInjector: 2
     # Extra Expendable Gear
     Gauze: 4
     Brutepack: 4
