@@ -465,7 +465,7 @@
   - type: Pda
     id: QuartermasterIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: LuxuryPen #funky change, only important people have pens roundstart
       priority: -1
       whitelist:
         tags:
@@ -560,7 +560,7 @@
   - type: Pda
     id: LibrarianIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: LuxuryPen #funky change, only important people have pens roundstart #well these aren't command people but it makes sense that they have pens
       priority: -1
       whitelist:
         tags:
@@ -595,7 +595,7 @@
   - type: Pda
     id: LawyerIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: LuxuryPen #funky change, only important people have pens roundstart #well these aren't command people but it makes sense that they have pens
       priority: -1
       whitelist:
         tags:
@@ -697,7 +697,7 @@
   - type: Pda
     id: CEIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: LuxuryPen #funky change, only important people have pens roundstart
       priority: -1
       whitelist:
         tags:
@@ -741,7 +741,7 @@
   - type: Pda
     id: CMOIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: LuxuryPen #funky change, only important people have pens roundstart
       priority: -1
       whitelist:
         tags:
@@ -838,7 +838,7 @@
   - type: Pda
     id: RDIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: LuxuryPen #funky change, only important people have pens roundstart
       priority: -1
       whitelist:
         tags:
@@ -883,7 +883,7 @@
   - type: Pda
     id: HoSIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: LuxuryPen #funky change, only important people have pens roundstart
       priority: -1
       whitelist:
         tags:
@@ -953,7 +953,7 @@
   - type: Pda
     id: CentcomIDCard
     penSlot:
-      startingItem: PenCentcom
+      startingItem: PenCentcom #admeme, doubt this is gonna get misused + this is literally the most important person on station if this person exists so like... yeah.
       priority: -1
       whitelist:
         tags:
@@ -1300,7 +1300,7 @@
   - type: Pda
     id: ReporterIDCard
     penSlot:
-      startingItem: LuxuryPen
+      startingItem: LuxuryPen #funky change, only important people have pens roundstart #well these aren't command people but it makes sense that they have pens
       priority: -1
       whitelist:
         tags:
