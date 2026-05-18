@@ -88,9 +88,11 @@
       tableId: UncommonLetterBundleTable
     - id: SpaceCash100
     - id: Joint
+    #funky changes start here
     - id: MothroachCube
     - id: SecurityWhistle
     - id: HandheldStationMap
+    #ends
 
 - type: entityTable # TODO: Add more variety!
   id: LetterRareEntityTable # Interesting things that can actually be of use, should never be more expensive than 500 spesos
@@ -109,6 +111,7 @@
       - id: Bloodpack
     - id: SyndicateBusinessCard
       weight: 0.5
+      #funky changes start from here
     - id: ArabianLamp
     - id: PhoneInstrumentSyndicate
       weight: 0.5
@@ -126,6 +129,7 @@
     - id: LandMineModular
     - !type:NestedSelector
       tableId: LetterKnives
+      #funkends
 
 # Packages
 # TODO: Currently mostly maints loot, should be updated in the future.
@@ -140,10 +144,12 @@
     - !type:NestedSelector
       tableId: FoodRandomCakeTable
       weight: 2
+      #funkstart
     - id: FoodBoxPizzaFilled
     - id: DrinkCanPack
     - id: FoodMealHappyHonkBigBite
       weight: 0.5
+      #funkend
 
 - type: entityTable
   id: PackageUncommonEntityTable
@@ -158,7 +164,7 @@
       tableId: AllPlushiesTable
       weight: 0.4
     - !type:NestedSelector
-      tableId: AllToysTable
+      tableId: AllToysTable #funky
       weight: 0.4
     - !type:NestedSelector
       tableId: RandomAllAlcoholTable
@@ -168,7 +174,7 @@
     - !type:NestedSelector
       tableId: InsulsTable #Uncommon since it's weighted towards budget/fingerless
       weight: 0.2
-    - !type:NestedSelector
+    - !type:NestedSelector #funky
       tableId: PackagePresents
       weight: 0.1
 
@@ -190,6 +196,7 @@
     - !type:NestedSelector
       tableId: SyndieMaintLoot
       weight: 0.5
+      #funkstart
     - !type:NestedSelector
       tableId: PackageSyndieStructureStuff
       weight: 0.1
