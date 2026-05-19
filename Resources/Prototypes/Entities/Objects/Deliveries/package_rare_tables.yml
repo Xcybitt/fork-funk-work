@@ -7,9 +7,11 @@
     - !type:NestedSelector
       tableId: PackageRareEngineeringBundlesTable
     - !type:NestedSelector
+    #funkstart
       tableId: PackageRareSecurityBundlesTable
     - !type:NestedSelector
       tableId: PackageRareScienceBundlesTable
+      #funkend
 
 # Package Bundles
 ## Basically items that should always spawn together, specific to packages
@@ -181,12 +183,13 @@
       - id: ClothingBeltUtility
       - id: ClothingBeltUtilityEngineering
       - id: ClothingBeltChiefEngineerFilled
-        prob: 0.1
+        prob: 0.1 #funky change I LOVE GAMBLING!!!
     - id: ClothingShoesBootsMag
       prob: 0.5
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingShoesColorYellow
 
+#funkstart
 ### Security
 
 # General table that contains all security packages
@@ -552,3 +555,4 @@
         children:
         - id: WeaponDisablerPractice
         - id: WeaponLaserCarbinePractice
+#funkend
