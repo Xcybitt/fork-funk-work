@@ -232,6 +232,9 @@
     startingCharge: 720
   - type: BatterySelfRecharger
     autoRechargeRate: 12 # takes 1 minute to charge itself back to full
+  - type: RadiationSource
+    intensity: 0.15
+    slope: 0.05
 
 - type: entity
   parent: PowerCellMicroreactor
