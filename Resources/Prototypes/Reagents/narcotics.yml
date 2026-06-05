@@ -523,6 +523,7 @@
   color: "#d68676"
   boilingPoint: 212.0
   meltingPoint: 170.0
+  worksOnTheDead: true #well if it doesn't, you could just die to cleanse yourself, and that's kinda lame. This chem will RR you now though, but then again... it's 17 minutes of hyperzine+half omni. glory or death. side effect this also works for dead people, but they won't get defibbed so... theoretically still fine. you still need a battlebuddy to get back up after death.
   metabolisms:
     Bloodstream:
       metabolismRate: 0.01 #should calculate to around 1000 secs per pill of stim time, note that at 500 secs you'd lose the regen for combat damages
@@ -605,7 +606,6 @@
         - panaceaum-effect-headache
         - panaceaum-effect-suboptimal
         - panaceaum-effect-itchy
-        - norepinephricacid-effect-vision-fail
       - !type:PopupMessage
         conditions:
         - !type:ReagentCondition
@@ -620,17 +620,24 @@
         - panaceaum-effect-doom
         - panaceaum-effect-panic
         - panaceaum-effect-tearing
+      - !type:Emote
+        emote: Scream
+        probability: 0.08
+        conditions:
+        - !type:ReagentCondition
+          reagent: Panaceaum
+          max: 5
       # Stopgaps to make sure pana doesn't leave your body
       - !type:AdjustReagent #just in case you get hit with charcoal or something
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Panaceaum
           max: 1
         reagent: Panaceaum
         amount: 3
       - !type:AdjustReagent #this should hold for the natural body's processing
         conditions:
-        - !type:ReagentThreshold
+        - !type:ReagentCondition
           reagent: Panaceaum
           max: 4
         reagent: Panaceaum
