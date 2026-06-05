@@ -643,7 +643,7 @@
         reagent: Panaceaum
         amount: 0.5
       # Main effects
-      - !type:ModifyBleed
+      - !type:ModifyBleed #you do still bleed so.. you CAN eat and drink to heal your bloodloss, but don't expect saline to help you quick
         amount: -1.5
       - !type:EvenHealthChange # you WILL shrug off any damage given time
         damage:
