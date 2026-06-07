@@ -172,6 +172,8 @@
     - id: HoloprojectorSecurity
     - id: BoxEvidenceMarkers
     - id: HandLabeler
+    - id: BoxBodyBag #funky, for crime scenes
+    - id: CrayonBoX #funky, for sketches of crime sites
     - id: PlushieLizardJobDetective
       prob: 0.02
 

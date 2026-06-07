@@ -21,6 +21,8 @@
     RiotBulletShield: 2
     RadioHandheldSecurity: 5
     Bola: 6
+    BoxForensicPad: 2 #funky, for processing the old fashioned way
+    BoxBodyBag: 2 #funky, for dead security perps
   # security officers need to follow a diet regimen!
   contrabandInventory:
     WeaponMeleeNeedle: 2
