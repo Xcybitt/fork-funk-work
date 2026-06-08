@@ -144,8 +144,8 @@
     - !type:NestedSelector
       tableId: FoodRandomCakeTable
       weight: 2
-      #funkstart
     - id: FoodBoxPizzaFilled
+    #funkstart
     - id: DrinkCanPack
     - id: FoodMealHappyHonkBigBite
       weight: 0.5
