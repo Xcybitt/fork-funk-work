@@ -38,6 +38,9 @@ uplink-hushpup-desc = A powerful silenced shotgun with a low magazine capacity. 
 uplink-c20r-name = C-20r
 uplink-c20r-desc = Old faithful: The classic C-20r Submachine Gun.
 
+uplink-AKMS-name = AKMS
+uplink-AKMS-desc = Be wary of an old gun in a time where new guns die out fast. A backbone of insurgencies from even a millenia ago, this design endures time as the reliable great equalizer.
+
 uplink-bulldog-name = Bulldog
 uplink-bulldog-desc = Lean and mean: Contains the popular Bulldog Shotgun.
 
@@ -101,7 +104,7 @@ uplink-pistol-magazine-name = Pistol Magazine (.35 auto)
 uplink-pistol-magazine-desc = Pistol magazine with 15 cartridges. Compatible with the Viper.
 
 uplink-pistol-magazine-c20r-name = SMG magazine (.35 auto)
-uplink-pistol-magazine-c20r-desc = SMG magazine with 30 cartridges. Compatible with C-20r.
+uplink-pistol-magazine-c20r-desc = SMG magazine with 30 cartridges. Compatible with the C-20r.
 
 uplink-magazine-bulldog-pellet-name = Drum magazine (.50 pellet)
 uplink-magazine-bulldog-pellet-desc = Shotgun magazine with 8 shells filled with buckshot. Compatible with the Bulldog.
@@ -111,6 +114,9 @@ uplink-magazine-bulldog-slug-desc = Shotgun magazine with 8 shells filled with s
 
 uplink-estoc-ammo-name = Rifle magazine (.20 rifle)
 uplink-estoc-ammo-desc = A rifle magazine with 25 cartridges. Compatible with the Estoc DMR.
+
+uplink-pistol-magazine-AKMS-name = Rifle magazine (.30 rifle)
+uplink-pistol-magazine-AKMS-desc = A rifle magazine with 30 cartridges. Compatible with the AKMS.
 
 uplink-pistol-magazine-caseless-name = Pistol Magazine (.25 caseless)
 uplink-pistol-magazine-caseless-desc = Pistol magazine with 10 cartridges. Compatible with the Cobra.
@@ -259,13 +265,16 @@ uplink-meds-bundle-name = Interdyne Medical Bundle
 uplink-meds-bundle-desc = An assortment of autoinjectors and premium medical equipment to cover for every possible situation. Contains an elite compact defibrillator that can be used as a weapon.
 
 uplink-ammo-bundle-name = Ammo Bundle
-uplink-ammo-bundle-desc = Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, 3 magazines for the Estoc DMR, and 2 ammo boxes for the L6 SAW.
+uplink-ammo-bundle-desc = Reloading! Contains 4 magazines for the C-20r, 4 magazines for the AKMS, 5 drums for the Bulldog, 3 magazines for the Estoc DMR, and 2 ammo boxes for the L6 SAW.
 
 uplink-sniper-bundle-name = Sniper Bundle
 uplink-sniper-bundle-desc = An inconspicuous briefcase that contains a Hristov, 10 spare bullets and a convenient disguise.
 
 uplink-c20r-bundle-name = C-20r Bundle
 uplink-c20r-bundle-desc = Old faithful: The classic C-20r Submachine Gun, bundled with three magazines.
+
+uplink-AKMS-bundle-name = AKMS Bundle
+uplink-AKMS-bundle-desc = A backbone of insurgencies from even a millenia ago, the reliable AKMS, bundled with three magazines.
 
 uplink-bulldog-bundle-name = Bulldog Bundle
 uplink-bulldog-bundle-desc = Lean and mean: Contains the popular Bulldog Shotgun, a 12g slug drum, and four 12g buckshot drums.

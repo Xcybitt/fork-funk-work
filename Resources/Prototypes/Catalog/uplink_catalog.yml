@@ -221,6 +221,44 @@
       - NukeOpsUplink
 
 - type: listing
+  id: UplinkAKMS
+  name: uplink-AKMS-name
+  description: uplink-AKMS-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/ak.rsi, state: icon }
+  productEntity: BriefcaseWeaponAKMSFilled
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 14
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:StoreWhitelistCondition
+    blacklist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: UplinkAKMSBundle
+  name: uplink-AKMS-bundle-name
+  description: uplink-AKMS-bundle-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/ak.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateFilledAKMS
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 17
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
   id: UplinkBulldog
   name: uplink-bulldog-name
   description: uplink-bulldog-desc
@@ -548,6 +586,18 @@
   description: uplink-pistol-magazine-c20r-desc
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi, state: red-icon }
   productEntity: MagazinePistolSubMachineGun
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmo
+
+# For the AKMS
+- type: listing
+  id: UplinkMagazineLightRifle
+  name: uplink-pistol-magazine-AKMS-name
+  description: uplink-pistol-magazine-AKMS-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi, state: base }
+  productEntity: MagazineLightRifle
   cost:
     Telecrystal: 2
   categories:

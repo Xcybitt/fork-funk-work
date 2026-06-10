@@ -102,3 +102,14 @@
         - id: WeaponLauncherChinaLake
         - id: GrenadeFrag
           amount: 2
+
+- type: entity
+  id: BriefcaseWeaponAKMSFilled
+  parent: BriefcaseWeapon
+  name: secure AKMS case
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponRifleAk

@@ -86,6 +86,20 @@
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledAKMS
+  name: AKMS bundle
+  description: "A backbone of insurgencies from even a millenia ago, the reliable AKMS, bundled with three magazines."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponRifleAk
+        - id: MagazineLightRifle
+          amount: 2
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledRifle
   name: Estoc DMR bundle
   description: "For medium-range sharpshooting, the Estoc DMR. Bundled with three magazines."
@@ -165,7 +179,7 @@
   parent: ClothingBackpackDuffelSyndicateAmmo
   id: ClothingBackpackDuffelSyndicateAmmoFilled
   name: ammo bundle
-  description: "Reloading! Contains 4 magazines for the C-20r, 5 drums for the Bulldog, 3 magazines for the Estoc DMR, and 2 ammo boxes for the L6 SAW."
+  description: "Reloading! Contains 4 magazines for the C-20r, 4 magazines for the AKMS, 5 drums for the Bulldog, 3 magazines for the Estoc DMR, and 2 ammo boxes for the L6 SAW."
   components:
   - type: EntityTableContainerFill
     containers:
@@ -174,6 +188,8 @@
         - id: MagazinePistolSubMachineGun
           amount: 4
         - id: MagazineShotgun
+          amount: 4
+        - id: MagazineLightRifle
           amount: 4
         - id: MagazineRifle
           amount: 3
