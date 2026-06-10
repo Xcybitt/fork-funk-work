@@ -52,6 +52,7 @@
     back:
     - Flash
     - MagazinePistol
+    - HoSWhistle #funky
 
 - type: chameleonOutfit
   id: HeadOfSecurityChameleonOutfit
