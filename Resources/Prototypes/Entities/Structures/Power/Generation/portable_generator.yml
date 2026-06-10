@@ -6,6 +6,12 @@
     # Basic properties
     - type: Transform
       anchored: False
+    - type: Item
+      size: Ginormous
+    - type: MultiHandedItem #funky, making generators holdable
+    - type: HeldSpeedModifier #this big and slow
+      walkModifier: 0.7
+      sprintModifier: 0.7
     - type: Physics
       bodyType: Dynamic
     - type: StaticPrice
