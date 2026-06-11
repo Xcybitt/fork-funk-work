@@ -121,7 +121,7 @@ public sealed class RespiratorSystem : EntitySystem
                 continue;
             }
 
-            if (respirator.Saturation > 2)
+            if (respirator.Saturation > 4)
             {
                 // todo make respirator.HyperoxiaThreshold variable real, gotta learn more about actual C code before I can continue with this
                 // this could definitely be something cooler than normal suffocation
