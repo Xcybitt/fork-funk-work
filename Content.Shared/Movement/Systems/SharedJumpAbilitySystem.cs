@@ -53,7 +53,8 @@ public sealed partial class SharedJumpAbilitySystem : EntitySystem
 
     private void OnLeaperCollide(Entity<ActiveLeaperComponent> entity, ref StartCollideEvent args)
     {
-        _stun.TryKnockdown(entity.Owner, entity.Comp.KnockdownDuration, force: true);
+        _stun.TryKnockdown(args.OurEntity, entity.Comp.KnockdownDuration, force: true); //made entity.Owner into args.OurEntity for consistency's sake
+        _stun.TryKnockdown(args.OtherEntity, entity.Comp.KnockdownDuration, force: true); //this SHOULD make the entity that you bump into get knockdown'd
         RemCompDeferred<ActiveLeaperComponent>(entity);
     }
 
