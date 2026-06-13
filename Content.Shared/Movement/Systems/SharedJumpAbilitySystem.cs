@@ -51,7 +51,7 @@ public sealed partial class SharedJumpAbilitySystem : EntitySystem
         _actions.RemoveAction(entity.Owner, entity.Comp.ActionEntity);
     }
 
-    private void OnLeaperCollide(Entity<ActiveLeaperComponent> entity, ref StartCollideEvent args)
+    private void OnLeaperCollide(Entity<ActiveLeaperComponent> entity, ref StartCollideEvent args) //todo make some special number or whatever that makes tackling make you drop prone while jumping
     {
         _stun.TryKnockdown(args.OurEntity, entity.Comp.KnockdownDuration, force: true); //made entity.Owner into args.OurEntity for consistency's sake
         _stun.TryKnockdown(args.OtherEntity, entity.Comp.KnockdownDuration, force: true); //this SHOULD make the entity that you bump into get knockdown'd
