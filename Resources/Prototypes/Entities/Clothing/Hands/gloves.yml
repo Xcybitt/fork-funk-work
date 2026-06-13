@@ -736,7 +736,7 @@
   parent: [ ClothingHandsGlovesSyntheticBase, BaseSecurityContraband ]
   id: ClothingHandsGlovesColorBlackTackleSec
   name: security tackle gloves
-  description: Black gloves that do not keep you from frying, while granting the wearer the ability to jump headfirst towards a suspect.
+  description: Black gloves issued to security that do not keep you from frying, while granting the wearer the ability to jump headfirst towards a suspect.
   components:
   - type: Sprite
     sprite: Clothing/Hands/Gloves/Color/black.rsi
