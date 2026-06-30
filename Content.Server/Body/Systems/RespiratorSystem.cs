@@ -121,13 +121,14 @@ public sealed partial class RespiratorSystem : EntitySystem
                 continue;
             }
 
-            if (respirator.Saturation > 4)
+            // hyperoxia threshold calculation
+            if (respirator.Saturation > (respirator.MaxSaturation * 0.75)) //this should make hyperoxia's threshold scale with maxsaturation, how did i forget about other species
             {
                 // todo make respirator.HyperoxiaThreshold variable real, gotta learn more about actual C code before I can continue with this
                 // this could definitely be something cooler than normal suffocation
                 TakeSuffocationDamage((uid, respirator));
                 TakeSuffocationDamage((uid, respirator)); //hope this overpowers oxygen/nitrogen, so there's real issue in well, hyperoxia
-                respirator.SuffocationCycles += 1;
+                respirator.SuffocationCycles += 2; //2 from 1, should make people gasp
                 continue;
             }
 
