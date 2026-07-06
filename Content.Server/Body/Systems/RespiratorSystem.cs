@@ -122,7 +122,7 @@ public sealed partial class RespiratorSystem : EntitySystem
             }
 
             // hyperoxia threshold calculation
-            if (respirator.Saturation > (respirator.MaxSaturation * 0.75)) //this should make hyperoxia's threshold scale with maxsaturation, how did i forget about other species
+            if ((respirator.Saturation > (respirator.MaxSaturation * 0.75)) && (respirator.MaxSaturation < 10)) //this should make hyperoxia's threshold scale with maxsaturation, how did i forget about other species //this way of making slimes immune is ass and should be fixed but i don't have the knowhow yet, so the fix's a bit shit, fix if specieses have diff maxsaturations other than slimes//fuck my chud contrib life
             {
                 // todo make respirator.HyperoxiaThreshold variable real, gotta learn more about actual C code before I can continue with this
                 // this could definitely be something cooler than normal suffocation
