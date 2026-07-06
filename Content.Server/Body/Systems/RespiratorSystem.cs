@@ -122,13 +122,25 @@ public sealed partial class RespiratorSystem : EntitySystem
             }
 
             // hyperoxia threshold calculation
+            // this IF statement compares the respirator's saturation to the respirator's max saturation, then checks if the max saturation is lower than 10 or not, which functionally checks if the breather is a slime(yes it's a bad workaround)
             if ((respirator.Saturation > (respirator.MaxSaturation * 0.75)) && (respirator.MaxSaturation < 10)) //this should make hyperoxia's threshold scale with maxsaturation, how did i forget about other species //this way of making slimes immune is ass and should be fixed but i don't have the knowhow yet, so the fix's a bit shit, fix if specieses have diff maxsaturations other than slimes//fuck my chud contrib life
             {
+                //taken from normal suffocation code, this should make the hyperoxia patient gasp so people can know there's an issue
+                // this should tmi try gasping the respirator if the cooldown of the gasp is up
+                if (_gameTiming.CurTime >= respirator.LastGaspEmoteTime + respirator.GaspEmoteCooldown)
+                {
+                    respirator.LastGaspEmoteTime = _gameTiming.CurTime;
+                    _chat.TryEmoteWithChat(uid,
+                        respirator.GaspEmote,
+                        ChatTransmitRange.HideChat,
+                        ignoreActionBlocker: true);
+                }
                 // todo make respirator.HyperoxiaThreshold variable real, gotta learn more about actual C code before I can continue with this
                 // this could definitely be something cooler than normal suffocation
+                // this applies 2* the suffocation damage compared to normal asphyxiation since the respirator will heal airloss damage cause they are breathing their air
                 TakeSuffocationDamage((uid, respirator));
                 TakeSuffocationDamage((uid, respirator)); //hope this overpowers oxygen/nitrogen, so there's real issue in well, hyperoxia
-                respirator.SuffocationCycles += 2; //2 from 1, should make people gasp
+                respirator.SuffocationCycles += 1;
                 continue;
             }
 
