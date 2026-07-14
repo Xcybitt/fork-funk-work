@@ -158,11 +158,14 @@
   parent: [ClothingShoesBaseWinterBoots, ClothingShoesMilitaryBase, BaseSecurityContraband]
   id: ClothingShoesBootsWinterSec
   name: security winter boots
+  description: Nanotrasen-issue Security winter boots for winter scenarios or winter situations. All winter, all the time. Might want to pack some hot drinks where you're going with this... #funky
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootssec.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/winterbootssec.rsi
+  - type: ClothingSlowOnDamageModifier #funky #makes winter boots more of an option
+    modifier: 0.55
 
 - type: entity
   parent: [ClothingShoesBaseWinterBoots, BaseSyndicateContraband]

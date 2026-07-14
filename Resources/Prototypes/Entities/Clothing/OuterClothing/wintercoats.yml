@@ -90,10 +90,12 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterBartender
 
+################################################################
 - type: entity
   parent: [ClothingOuterWinterCoatToggleable, BaseCommandContraband]
   id: ClothingOuterWinterCap
   name: captain's winter coat
+  description: An armored chestpiece sewn into a winter coat that provides protection whilst still offering maximum mobility and comfort. Issued only to the station's finest, who can certainly hold their own against the cold and doesn't need this coat. #funky
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
@@ -112,6 +114,15 @@
       - state: CAP-equipped-OUTERCLOTHING
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterCaptain
+  - type: Armor #funky
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.65
+        Heat: 0.55
+        Caustic: 0.9
+################################################################
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable

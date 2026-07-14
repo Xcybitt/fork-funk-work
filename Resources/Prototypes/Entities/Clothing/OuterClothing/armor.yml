@@ -35,6 +35,14 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
 
 #Alternate / slim basic armor vest, allowed for security and bartenders
 - type: entity
@@ -48,6 +56,14 @@
     sprite: Clothing/OuterClothing/Armor/security_slim.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/security_slim.rsi
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
 
 - type: entity
   parent: ClothingOuterArmorBasic
@@ -103,6 +119,14 @@
     sprite: Clothing/OuterClothing/Vests/detvest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/detvest.rsi
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
 
 - type: entity
   parent: [ ClothingOuterBaseMedium, AllowSuitStorageClothing ]
@@ -164,6 +188,14 @@
         Heat: 0.9
   - type: StaticPrice
     price: 1500
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
 
 #Elite web vest
 - type: entity
@@ -192,6 +224,14 @@
     reduction: 0.85
   - type: StaticPrice
     price: 2500
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
 
 #Mercenary web vest
 - type: entity
@@ -211,6 +251,14 @@
         Slash: 0.7
         Piercing: 0.5
         Heat: 0.9
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
 
 
 # Armor covering multiple body parts including limbs

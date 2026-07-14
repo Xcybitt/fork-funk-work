@@ -10,6 +10,14 @@
     sprite: _Funkystation/Clothing/OuterClothing/Wintercoats/NoHood/hos.rsi
   - type: Clothing
     sprite: _Funkystation/Clothing/OuterClothing/Wintercoats/NoHood/hos.rsi
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
 
 - type: entity
   parent: [BaseSecurityCommandContraband, ClothingOuterArmorWarden, ClothingOuterStorageBase]
@@ -21,6 +29,14 @@
     sprite: _Funkystation/Clothing/OuterClothing/Wintercoats/NoHood/ward.rsi
   - type: Clothing
     sprite: _Funkystation/Clothing/OuterClothing/Wintercoats/NoHood/ward.rsi
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
 
 - type: entity
   parent: [BaseSecurityCommandContraband, ClothingOuterArmorBase, ClothingOuterStorageBase]
@@ -32,3 +48,11 @@
     sprite: _Funkystation/Clothing/OuterClothing/Wintercoats/NoHood/sec.rsi
   - type: Clothing
     sprite: _Funkystation/Clothing/OuterClothing/Wintercoats/NoHood/sec.rsi
+  - type: ItemSlots  #funky, holsters
+    slots:
+      item:
+        priority: 4
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm

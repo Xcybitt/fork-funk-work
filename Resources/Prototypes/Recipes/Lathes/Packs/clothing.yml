@@ -140,7 +140,7 @@
 - type: latheRecipePack
   id: WinterCoats
   recipes:
-  - ClothingOuterWinterCap
+#  - ClothingOuterWinterCap #funky, cause this has armor
   - ClothingOuterWinterCE
   - ClothingOuterWinterCMO
   - ClothingOuterWinterHoP
