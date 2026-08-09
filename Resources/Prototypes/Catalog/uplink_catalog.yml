@@ -508,7 +508,7 @@
   description: uplink-exploding-syndicate-moderate-bomb-desc
   productEntity: SyndicateBombModerate
   cost:
-    Telecrystal: 5
+    Telecrystal: 25
   categories:
     - UplinkExplosives
   restockTime: 1800
@@ -524,7 +524,7 @@
   description: uplink-exploding-syndicate-moderate-bomb-desc
   productEntity: SyndicateBombModerate
   cost:
-    Telecrystal: 5
+    Telecrystal: 25
   categories:
     - UplinkExplosives
   conditions:
