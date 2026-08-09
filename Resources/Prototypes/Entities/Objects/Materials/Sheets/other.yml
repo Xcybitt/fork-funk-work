@@ -191,7 +191,7 @@
         Quantity: 8
       - ReagentId: Radium
         Quantity: 2
-  - type: RadiationSource
+  - type: RadiationSource #funky
     intensity: 0.1
     slope: 3
 
