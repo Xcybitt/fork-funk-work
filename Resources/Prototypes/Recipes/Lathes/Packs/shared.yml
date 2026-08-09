@@ -43,6 +43,7 @@
   - BoxFolderClipboardEmpty
   - BoxFolderPlasticClipboardEmpty
   - PaperBin #funky
+  - ShredderBin # Funky
   - DigitalClock # Funky
 
 - type: latheRecipePack

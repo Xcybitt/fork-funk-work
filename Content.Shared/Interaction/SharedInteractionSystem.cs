@@ -56,7 +56,6 @@ namespace Content.Shared.Interaction
     public abstract partial class SharedInteractionSystem : EntitySystem
     {
         [Dependency] private IGameTiming _gameTiming = default!;
-        [Dependency] private IMapManager _mapManager = default!;
         [Dependency] private ISharedAdminLogManager _adminLogger = default!;
         [Dependency] private ISharedChatManager _chat = default!;
         [Dependency] private ActionBlockerSystem _actionBlockerSystem = default!;
@@ -127,6 +126,10 @@ namespace Content.Shared.Interaction
                     new PointerInputCmdHandler(HandleActivateItemInWorld))
                 .Bind(ContentKeyFunctions.TryPullObject,
                     new PointerInputCmdHandler(HandleTryPullObject))
+                // ES START
+                .Bind(EngineKeyFunctions.UseSecondary,
+                    new PointerInputCmdHandler(ESHandleEntityMenuRotate))
+                // ES END
                 .Register<SharedInteractionSystem>();
 
             _rateLimit.Register(RateLimitKey,
@@ -139,6 +142,20 @@ namespace Content.Shared.Interaction
 
             InitializeBlocking();
         }
+
+        // ES START
+        private bool ESHandleEntityMenuRotate(ICommonSession? session, EntityCoordinates coords, EntityUid uid)
+        {
+            if (!ValidateClientInput(session, coords, uid, out var user))
+                return true;
+
+            // clientside handles opening the menu, but we want to rotate to it also
+            // // which we do in shared
+            ValidateInteractAndFace(user.Value, coords);
+
+            return false;
+        }
+        // ES END
 
         private void RateLimitAlertAdmins(ICommonSession session)
         {
@@ -903,7 +920,7 @@ namespace Content.Shared.Interaction
                     ignoreAnchored = angleDelta < wallMount.Arc / 2 || Math.Tau - angleDelta < wallMount.Arc / 2;
                 }
 
-                if (ignoreAnchored && _mapManager.TryFindGridAt(targetCoords, out var gridUid, out var grid))
+                if (ignoreAnchored && _map.TryFindGridAt(targetCoords, out var gridUid, out var grid))
                     ignored.UnionWith(_map.GetAnchoredEntities((gridUid, grid), targetCoords));
             }
 
@@ -1269,9 +1286,6 @@ namespace Content.Shared.Interaction
             if (IsDeleted(user) || IsDeleted(item))
                 return;
 
-            var dropMsg = new DroppedEvent(user);
-            RaiseLocalEvent(item, dropMsg, true);
-
             // If the dropper is rotated then use their targetrelativerotation as the drop rotation
             var rotation = Angle.Zero;
 
@@ -1281,6 +1295,9 @@ namespace Content.Shared.Interaction
             }
 
             Transform(item).LocalRotation = rotation;
+
+            var dropMsg = new DroppedEvent(user);
+            RaiseLocalEvent(item, dropMsg, true);
         }
         #endregion
 
