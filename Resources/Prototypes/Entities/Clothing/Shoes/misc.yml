@@ -126,7 +126,7 @@
   parent: [ClothingShoesBase, PowerCellSlotSmallItem, BaseToggleClothing]
   id: ClothingShoesBootsSpeed
   name: speed boots
-  description: High-tech boots woven with quantum fibers, able to convert electricity into pure speed! These boots seem to have roller skates built in them... This won't end well.
+  description: High-tech boots woven with quantum fibers, able to convert electricity into pure speed! These boots seem to have roller skates built in them... This won't end well. #funky
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/speedboots.rsi
@@ -135,7 +135,7 @@
       map: [ "enum.ToggleableVisuals.Layer" ]
   - type: Clothing
     sprite: Clothing/Shoes/Boots/speedboots.rsi
-  - type: Skates #bump into everything, as god intended.
+  - type: Skates #bump into everything, as god intended. #funky
   - type: ToggleClothing
     action: ActionToggleSpeedBoots
   - type: ClothingSpeedModifier
@@ -152,7 +152,7 @@
   - type: StaticPrice
     price: 500
   - type: PowerCellDraw
-    drawRate: 6 # 1.5 times before, cause these are still REALLY good. ideally? they're on par with microreactors.
+    drawRate: 6 # 1.5 times before, cause these are still REALLY good. ideally? they're on par with microreactors. #funky
   - type: ToggleCellDraw
   - type: ItemSlots
     slots:
