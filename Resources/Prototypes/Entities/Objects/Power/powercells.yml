@@ -227,7 +227,7 @@
   parent: BasePowerCell
   id: PowerCellMicroreactor
   name: microreactor power cell
-  description: A rechargeable standardized microreactor cell. Has lower capacity but slowly recharges by itself. Wait... this has a functional uranium reactor inside it? #funky
+  description: A rechargeable standardized microreactor cell. Has lower capacity but slowly recharges by itself.
   suffix: Full
   components:
   - type: Sprite
@@ -242,10 +242,7 @@
     startingCharge: 720
   - type: BatterySelfRecharger
     autoRechargeRate: 12 # takes 1 minute to charge itself back to full
-  - type: RadiationSource #funky
-    intensity: 0.15
-    slope: 0.05
-
+  
 - type: entity
   parent: PowerCellMicroreactor
   id: PowerCellMicroreactorPrinted
