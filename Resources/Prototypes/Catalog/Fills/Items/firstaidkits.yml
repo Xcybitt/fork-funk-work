@@ -127,7 +127,7 @@
         amount: 6
 
 - type: entity #until we actually need a fills catalog, leaving this here for now
-  id: PanaMedipenKit
+  id: FuPanaMedipenKit
   suffix: Filled, Pana
   parent: MedkitCombat
   components:
