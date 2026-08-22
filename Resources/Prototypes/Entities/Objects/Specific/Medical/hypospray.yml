@@ -632,11 +632,11 @@
   - type: StaticPrice
     price: 583 # 3500 for 6 as a freaky fraction
 
-- type: entity #taking the stimpack mini for panaceaum #funky
+- type: entity #taking the stimpack mini for panaceaum #funky #also i doubt we'd need a whole yml for hyposprays unless we overhaul it sooo. leaving this here.
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: PanaMedipen
   name: panaceaum injector
-  description: A relic of the pod wars, a chemical microinjector containing a small shot of pure panaceaum. Effects last for about 15 minutes, with the effects slowly degrading your body, even after death. Are you sure you want to do this?
+  description: A relic of the pod wars, a chemical microinjector containing a small shot of pure panaceaum. Effects last for about 5 minutes, with the effects slowly degrading your body, even after death. Are you sure you want to do this?
   components:
   - type: Item
     inhandVisuals:
@@ -660,10 +660,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 15
+        maxVol: 10 #5- mins on first inject, and 10- on subsequent. OD is an issue tho
         reagents:
         - ReagentId: Panaceaum
-          Quantity: 15
+          Quantity: 10
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     changeColor: false

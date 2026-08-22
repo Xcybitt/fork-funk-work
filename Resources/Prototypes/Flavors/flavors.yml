@@ -1502,9 +1502,3 @@
   id: motivating
   flavorType: Base
   description: flavor-base-motivating
-
-#funkstart
-- type: flavor
-  id: impendingdoom
-  flavorType: Complex
-  description: flavor-complex-impendingdoom
