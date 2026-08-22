@@ -46,6 +46,22 @@
         ents: []
   - type: StaticPrice
     price: 500
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: Bulldog
@@ -107,6 +123,22 @@
   - type: Appearance
   - type: StaticPrice
     price: 5000
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: double-barreled shotgun
@@ -250,6 +282,16 @@
     deconstructionTarget: null
   - type: StaticPrice
     price: 0
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: blunderbuss

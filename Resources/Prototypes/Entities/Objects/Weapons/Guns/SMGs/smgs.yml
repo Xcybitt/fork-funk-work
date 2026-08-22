@@ -58,6 +58,16 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: Atreides
@@ -81,6 +91,16 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: C-20r submachine gun
@@ -163,6 +183,16 @@
     autoRefillRate: 4s
     affectedByEmp: true
   - type: AmmoCounter
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: Drozd
@@ -282,6 +312,16 @@
     steps: 6
     zeroVisible: true
   - type: Appearance
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: brown briefcase
@@ -325,3 +365,9 @@
     damage:
       types:
         Blunt: 8
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: DamageOtherOnHit #funky #todo make all/most stuff that's throwable deal damage, then delete this todo #this shouldn't be an out, since if someone's holding your briefcase, OOC you're already out since the mag indicator
+    damage:
+      types:
+        Blunt: 6

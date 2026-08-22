@@ -59,11 +59,20 @@
     inHandsMaxFillLevels: 1
     equippedFillBaseName: -fill-
     equippedMaxFillLevels: 1
-  - type: MeleeWeapon
+  - type: EmbeddableProjectile #funky #all this should make this functionally a gun + a spear, which i hope should make the weapon ACTUALLY useable and maybe viable
+    offset: -0.15,0.0
+  - type: ThrowingAngle #funky
+    angle: 225
+  - type: LandAtCursor #funky
+  - type: DamageOtherOnHit #funky #owie they chucked a mosin at my face
+    damage:
+      types:
+        Piercing: 18
+  - type: MeleeWeapon #funky #buffed from 12 so that the bayonet is actually viable and also for that one poor fucking person that's been waiting for a mosin buff
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 12
+        Piercing: 20
     angle: 0
     animation: WeaponArcThrust
     soundHit:
@@ -156,6 +165,16 @@
       - CartridgeAntiMateriel
     capacity: 1
     proto: CartridgeAntiMateriel
+  - type: EmbeddableProjectile #funky
+    offset: -0.15,0.0
+  - type: ThrowingAngle #funky
+    angle: 225
+  - type: LandAtCursor #funky
+  - type: DamageOtherOnHit #funky #owie they chucked a musket at my face
+    damage:
+      types:
+        Piercing: 14
+        Bloodloss: 1 #the bayonet innately has the bleeds you property
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:

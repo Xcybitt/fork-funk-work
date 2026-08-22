@@ -25,6 +25,18 @@
     startingCharge: 1000
   - type: StaticPrice
     price: 500
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+      soundHit:
+        collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   parent: [BaseWeaponBattery, BaseGunWieldable]
@@ -60,6 +72,22 @@
   - type: Tag
     tags:
     - LaserWeapon
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   id: BaseWeaponPowerCell
@@ -119,6 +147,18 @@
     slots:
     - Belt
     - suitStorage
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+      soundHit:
+        collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   id: BaseWeaponPowerCellSmall
@@ -135,6 +175,18 @@
     quickEquip: false
     slots:
     - Belt
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+      soundHit:
+        collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: svalinn laser pistol
@@ -359,6 +411,22 @@
   - type: Battery
     maxCharge: 5000
     startingCharge: 5000
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: pulse rifle
@@ -395,6 +463,22 @@
   - type: Battery
     maxCharge: 40000
     startingCharge: 40000
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: laser cannon
@@ -431,6 +515,22 @@
   - type: Tag
     tags:
     - TurretCompatibleWeapon
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: portable particle decelerator
@@ -494,6 +594,22 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: practice blaster # Funky - Name & description changed to no longer reference the disabler
@@ -883,6 +999,22 @@
   - type: Battery
     maxCharge: 480
     startingCharge: 480
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: energy magnum
@@ -971,6 +1103,22 @@
     startingCharge: 1000
   - type: StaticPrice
     price: 100
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   parent: [WeaponAdvancedLaser, BaseXenoborgContraband]

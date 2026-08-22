@@ -50,6 +50,17 @@
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
   - type: StaticPrice
     price: 500
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
+
 
 - type: entity
   name: Deckard
