@@ -134,5 +134,5 @@
   - type: EntityTableContainerFill
     containers:
       storagebase:
-        id: PanaMedipen
+        id: FuPanaMedipen
         amount: 4
