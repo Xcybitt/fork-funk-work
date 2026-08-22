@@ -1,0 +1,26 @@
+#funky
+- type: listing
+  id: UplinkPanaceaum
+  name: uplink-panaceaum-name
+  description: uplink-panaceaum-desc
+  productEntity: PanaMedipen
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 15
+  cost:
+    Telecrystal: 25
+  categories:
+  - UplinkChemicals
+
+- type: listing
+  id: UplinkPanaceaumKit
+  name: uplink-panaceaum-kit-name
+  description: uplink-panaceaum-kit-desc
+  productEntity: PanaMedipenKit
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 60
+  cost:
+    Telecrystal: 100
+  categories:
+  - UplinkChemicals
