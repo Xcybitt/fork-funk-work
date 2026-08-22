@@ -634,7 +634,7 @@
 
 - type: entity #taking the stimpack mini for panaceaum #funky #also i doubt we'd need a whole yml for hyposprays unless we overhaul it sooo. leaving this here.
   parent: [ChemicalMedipen, BaseSyndicateContraband]
-  id: PanaMedipen
+  id: FuPanaMedipen
   name: panaceaum injector
   description: A relic of the pod wars, a chemical microinjector containing a small shot of pure panaceaum. Effects last for about 5 minutes, with the effects slowly degrading your body, even after death. Are you sure you want to do this?
   components:
