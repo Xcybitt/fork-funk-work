@@ -135,6 +135,22 @@
     pvsIncrease: 0.3
   - type: StaticPrice
     price: 3500
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 10
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 12
 
 - type: entity
   name: musket
@@ -217,6 +233,18 @@
     proto: CartridgeMagnum
   - type: StaticPrice
     price: 0
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   parent: WeaponPistolFlintlock

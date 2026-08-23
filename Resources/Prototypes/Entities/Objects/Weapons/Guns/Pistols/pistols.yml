@@ -68,16 +68,6 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
-  - type: MeleeWeapon #funky
-    damage:
-      types:
-        Blunt: 8
-  - type: AltFireMelee #funky
-    attackType: Light
-  - type: DamageOtherOnHit #funky
-    damage:
-      types:
-        Blunt: 6
 
 - type: entity
   name: viper
@@ -112,6 +102,18 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 1000
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: echis
@@ -148,6 +150,18 @@
     autoRefillRate: 2s
     affectedByEmp: true
   - type: AmmoCounter
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: cobra
@@ -198,6 +212,18 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 1500
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: mk 58
@@ -224,6 +250,18 @@
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
   - type: StealTarget
     stealGroup: OfficerHandgun
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: N1984
@@ -268,3 +306,15 @@
         whitelist:
           tags:
             - CartridgeMagnum
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 10 #hitting someone with a deagle probably hurts more than a glock
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 8

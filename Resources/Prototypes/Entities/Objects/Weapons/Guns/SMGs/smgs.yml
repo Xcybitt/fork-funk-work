@@ -58,22 +58,6 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
-  - type: MeleeWeapon #funky
-    damage:
-      types:
-        Blunt: 5
-    soundHit:
-      collection: MetalThud
-  - type: AltFireMelee #funky
-    attackType: Heavy
-  - type: IncreaseDamageOnWield #funky
-    damage:
-      types:
-        Blunt: 7
-  - type: DamageOtherOnHit #funky
-    damage:
-      types:
-        Blunt: 10
 
 - type: entity
   name: Atreides
@@ -149,6 +133,22 @@
   - type: Appearance
   - type: StaticPrice
     price: 5000
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: C-20r ROW #I think ROW stands for Recharging Onboard Weapon so i'm following the L6C's example
@@ -261,6 +261,22 @@
       steps: 5
       zeroVisible: true
     - type: Appearance
+    - type: MeleeWeapon #funky
+      damage:
+        types:
+          Blunt: 5
+      soundHit:
+        collection: MetalThud
+    - type: AltFireMelee #funky
+      attackType: Heavy
+    - type: IncreaseDamageOnWield #funky
+      damage:
+        types:
+          Blunt: 7
+    - type: DamageOtherOnHit #funky
+      damage:
+        types:
+          Blunt: 10
 
 - type: entity
   name: WT550

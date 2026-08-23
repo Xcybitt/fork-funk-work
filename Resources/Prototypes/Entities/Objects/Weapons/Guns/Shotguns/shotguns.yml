@@ -46,22 +46,6 @@
         ents: []
   - type: StaticPrice
     price: 500
-  - type: MeleeWeapon #funky
-    damage:
-      types:
-        Blunt: 5
-    soundHit:
-      collection: MetalThud
-  - type: AltFireMelee #funky
-    attackType: Heavy
-  - type: IncreaseDamageOnWield #funky
-    damage:
-      types:
-        Blunt: 7
-  - type: DamageOtherOnHit #funky
-    damage:
-      types:
-        Blunt: 10
 
 - type: entity
   name: Bulldog
@@ -161,6 +145,22 @@
     graph: ShotgunSawn
     node: start
     deconstructionTarget: null
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: double-barreled shotgun
@@ -186,6 +186,22 @@
     sprite: Objects/Weapons/Guns/Shotguns/enforcer_inhands_64x.rsi
   - type: BallisticAmmoProvider
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   parent: WeaponShotgunEnforcer
@@ -215,6 +231,22 @@
   - type: Tag
     tags:
     - WeaponShotgunKammerer
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: sawn-off shotgun
@@ -245,6 +277,8 @@
     damage:
       types:
         Blunt: 8
+    soundHit:
+      collection: MetalThud
   - type: AltFireMelee #funky
     attackType: Light
   - type: DamageOtherOnHit #funky
@@ -296,6 +330,8 @@
     damage:
       types:
         Blunt: 8
+    soundHit:
+      collection: MetalThud
   - type: AltFireMelee #funky
     attackType: Light
   - type: DamageOtherOnHit #funky
@@ -319,6 +355,22 @@
     capacity: 1
   - type: StaticPrice
     price: 0
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: improvised shotgun
@@ -343,6 +395,22 @@
     node: shotgun
   - type: StaticPrice
     price: 20
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
 
 - type: entity
   name: improvised shotgun
@@ -379,3 +447,19 @@
     fireRate: 2
   - type: GunSpreadModifier
     spread: 1.2
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Heavy
+  - type: IncreaseDamageOnWield #funky
+    damage:
+      types:
+        Blunt: 7
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 10
