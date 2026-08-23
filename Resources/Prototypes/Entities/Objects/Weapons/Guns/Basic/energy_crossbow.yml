@@ -51,6 +51,8 @@
     damage:
       types:
         Blunt: 8
+    soundHit:
+      collection: MetalThud
   - type: AltFireMelee #funky
     attackType: Light
   - type: DamageOtherOnHit #funky
