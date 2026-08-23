@@ -126,7 +126,7 @@
         id: StimpackMini
         amount: 6
 
-- type: entity #until we actually need a fills catalog, leaving this here for now
+- type: entity #until we actually need a fills catalog, leaving this here for now #yep
   id: FuPanaMedipenKit
   suffix: Filled, Pana
   parent: MedkitCombat
