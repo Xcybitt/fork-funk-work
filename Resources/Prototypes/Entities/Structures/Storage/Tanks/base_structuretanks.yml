@@ -58,6 +58,12 @@
   - type: ReagentTank
   - type: Transform
     noRot: true
+  - type: Climbable #funky
+    delay: 5.0
+  - type: Bonkable #funky
+    bonkDamage:
+      types:
+        Blunt: 4
 
 # For highcap tanks
 - type: entity
@@ -76,3 +82,9 @@
         - MachineMask
         layer:
         - WallLayer
+  - type: Climbable #funky
+    delay: 5.0
+  - type: Bonkable #funky
+    bonkDamage:
+      types:
+        Blunt: 4

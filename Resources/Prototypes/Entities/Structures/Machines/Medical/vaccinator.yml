@@ -22,3 +22,9 @@
       machine_board: !type:Container
       machine_parts: !type:Container
   - type: RequireProjectileTarget
+  - type: Climbable #funky
+    delay: 5.0
+  - type: Bonkable #funky
+    bonkDamage:
+      types:
+        Blunt: 4

@@ -57,6 +57,8 @@
       containers:
         - entity_storage
     - type: GravityAffected
+    - type: Climbable #funky
+      delay: 5.0
 
 - type: entity
   id: StealthBox

@@ -27,6 +27,10 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Climbable
+  - type: Bonkable #funky
+    bonkDamage:
+      types:
+        Blunt: 4
 
   # orebox-specific
   - type: Sprite
