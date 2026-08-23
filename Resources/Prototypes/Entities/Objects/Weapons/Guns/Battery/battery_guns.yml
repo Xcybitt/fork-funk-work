@@ -25,18 +25,6 @@
     startingCharge: 1000
   - type: StaticPrice
     price: 500
-  - type: MeleeWeapon #funky
-    damage:
-      types:
-        Blunt: 8
-    soundHit:
-      collection: MetalThud
-  - type: AltFireMelee #funky
-    attackType: Light
-  - type: DamageOtherOnHit #funky
-    damage:
-      types:
-        Blunt: 6
 
 - type: entity
   parent: [BaseWeaponBattery, BaseGunWieldable]
@@ -72,22 +60,6 @@
   - type: Tag
     tags:
     - LaserWeapon
-  - type: MeleeWeapon #funky
-    damage:
-      types:
-        Blunt: 5
-    soundHit:
-      collection: MetalThud
-  - type: AltFireMelee #funky
-    attackType: Heavy
-  - type: IncreaseDamageOnWield #funky
-    damage:
-      types:
-        Blunt: 7
-  - type: DamageOtherOnHit #funky
-    damage:
-      types:
-        Blunt: 10
 
 - type: entity
   id: BaseWeaponPowerCell
@@ -147,18 +119,6 @@
     slots:
     - Belt
     - suitStorage
-  - type: MeleeWeapon #funky
-    damage:
-      types:
-        Blunt: 8
-    soundHit:
-      collection: MetalThud
-  - type: AltFireMelee #funky
-    attackType: Light
-  - type: DamageOtherOnHit #funky
-    damage:
-      types:
-        Blunt: 6
 
 - type: entity
   id: BaseWeaponPowerCellSmall
@@ -175,18 +135,6 @@
     quickEquip: false
     slots:
     - Belt
-  - type: MeleeWeapon #funky
-    damage:
-      types:
-        Blunt: 8
-    soundHit:
-      collection: MetalThud
-  - type: AltFireMelee #funky
-    attackType: Light
-  - type: DamageOtherOnHit #funky
-    damage:
-      types:
-        Blunt: 6
 
 - type: entity
   name: svalinn laser pistol
@@ -216,6 +164,18 @@
     tags:
     - Sidearm
     - LaserWeapon
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: retro laser blaster
@@ -247,6 +207,18 @@
     tags:
     - Sidearm
     - LaserWeapon
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: makeshift laser pistol
@@ -281,6 +253,18 @@
     tags:
     - Sidearm
     - LaserWeapon
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: tesla gun
@@ -314,6 +298,18 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: laser carbine
@@ -373,6 +369,18 @@
     tags:
     - Sidearm
     - LaserWeapon
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: pulse carbine
@@ -652,6 +660,18 @@
     - Taser
     - Sidearm
   - type: PacifismAllowedGun
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: disabler
@@ -682,6 +702,18 @@
     - Security
     - Antagonists
   - type: PacifismAllowedGun
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: disabler SMG
@@ -724,6 +756,18 @@
   - type: StaticPrice
     price: 260
   - type: PacifismAllowedGun
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: taser
@@ -764,6 +808,18 @@
     zeroVisible: true
   - type: Appearance
   - type: PacifismAllowedGun
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: elite taser
@@ -825,6 +881,18 @@
     flavorKind: station-event-random-sentience-flavor-inanimate
     weight: 0.0002 # 5,000 times less likely than 1 regular animal
     # not putting a BlockMovement component here cause that's funny.
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: advanced laser pistol
@@ -865,6 +933,18 @@
     tags:
     - Sidearm
     - LaserWeapon
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: C.H.I.M.P. handcannon
@@ -913,6 +993,18 @@
     node: start
   - type: StaticPrice
     price: 100
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   parent: [WeaponPistolCHIMP, BaseSyndicateContraband]
@@ -1059,6 +1151,18 @@
   - type: BatterySelfRecharger
     autoRechargeRate: 48
     autoRechargePauseTime: 10
+  - type: MeleeWeapon #funky
+    damage:
+      types:
+        Blunt: 8
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee #funky
+    attackType: Light
+  - type: DamageOtherOnHit #funky
+    damage:
+      types:
+        Blunt: 6
 
 - type: entity
   name: temperature gun
