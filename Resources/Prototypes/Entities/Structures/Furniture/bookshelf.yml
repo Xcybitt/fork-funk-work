@@ -70,9 +70,3 @@
     graph: Bookshelf
     node: bookshelf
   - type: BlockWeather
-  - type: Climbable #funky #this one's p silly, you don't see anything inside the bookshelf, so i'm just gonna go ahead and guess your spessmen climbs into the bookshelf and there's a hole to leave. for some reason.
-    delay: 10.0 #theoretically cool for secret entrances, so leaving this in. making it slower tho.
-  - type: Bonkable #funky
-    bonkDamage:
-      types:
-        Blunt: 4
