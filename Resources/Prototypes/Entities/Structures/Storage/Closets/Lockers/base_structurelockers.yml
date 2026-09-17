@@ -38,6 +38,8 @@
     bonkDamage:
       types:
         Blunt: 4
+  - type: StaticPrice
+    price: 200    
 
 - type: entity
   id: LockerBaseSecure
