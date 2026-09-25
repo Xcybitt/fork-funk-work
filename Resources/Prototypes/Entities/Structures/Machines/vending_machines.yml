@@ -106,6 +106,16 @@
     bonkDamage:
       types:
         Blunt: 4
+  - type: ContainerContainer # funky start
+    containers:
+      hidden_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      hidden_slot:
+        name: hidden_slot
+        whitelist:
+          tags:
+          - SurveillanceDevices # funky end
   - type: VendingMachineEject
   - type: VendingMachineDispenseOnHit
     chance: 0.25
